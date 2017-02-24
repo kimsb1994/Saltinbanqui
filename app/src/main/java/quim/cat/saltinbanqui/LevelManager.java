@@ -21,6 +21,7 @@ public class LevelManager {
     ArrayList<GameObject> gameObjects;
     ArrayList<Rect> currentButtons;
     Bitmap[] bitmapsArray;
+
     public LevelManager(Context context,
                         int pixelsPerMetre, int screenWidth,
                         InputController ic,
@@ -42,6 +43,7 @@ public class LevelManager {
         // Ready to play
         playing = true;
     }
+
     public boolean isPlaying() {
         return playing;
     }
@@ -57,10 +59,32 @@ public class LevelManager {
                 break;
             case 'p':
                 index = 2;
-                break;  default:
+                break;default:
                 index = 0;
                 break;
         }// End switch
         return bitmapsArray[index];
-    }
-}// End getBitmap
+    }// End getBitmap
+
+    // This method allows each GameObject which 'knows'
+    // its type to get the correct index to its Bitmap
+    // in the Bitmap array.
+    public int getBitmapIndex(char blockType) {
+        int index;
+        switch (blockType) {
+            case '.':
+                index = 0;
+                break;
+            case '1':
+                index = 1;
+                break;
+            case 'p':
+                index = 2;
+                break;
+            default:
+                index = 0;
+                break;
+        }// End switch
+        return index;
+    }// End getBitmapIndex()
+}

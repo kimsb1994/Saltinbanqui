@@ -3,7 +3,6 @@ package quim.cat.saltinbanqui;
 import java.util.ArrayList;
 public class LevelCave extends LevelData {
     LevelCave() {
-        tiles = new ArrayList<String>();
         this.tiles.add("p.............................................");
         this.tiles.add("..............................................");
         this.tiles.add(".....................111111...................");

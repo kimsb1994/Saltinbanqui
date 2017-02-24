@@ -40,7 +40,8 @@ public abstract class GameObject {
         this.bitmapName = bitmapName;
     }
     public float getWidth() {
-        return width;}
+        return width;
+    }
     public void setWidth(float width) {
         this.width = width;
     }

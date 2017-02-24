@@ -13,8 +13,7 @@ public class PlatformActivity extends Activity {
         Display display = getWindowManager().getDefaultDisplay();
         Point resolution = new Point();
         display.getSize(resolution);
-        platformView = new PlatformView
-                (this, resolution.x, resolution.y);
+        platformView = new PlatformView(this, resolution.x, resolution.y);
         setContentView(platformView);
     }
 

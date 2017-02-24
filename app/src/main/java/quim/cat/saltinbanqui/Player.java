@@ -14,7 +14,7 @@ public class Player extends GameObject {
         // This is a sprite sheet with multiple frames
         // of animation. So it will look silly until we animate it
         // In chapter 6.
-        setBitmapName("player");
+        setBitmapName("personaje");
         // X and y locations from constructor parameters
         setWorldLocation(worldStartX, worldStartY, 0);
     }

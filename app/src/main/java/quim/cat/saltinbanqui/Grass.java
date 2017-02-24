@@ -7,9 +7,9 @@ public class Grass extends GameObject {
         final float WIDTH = 1;
         setHeight(HEIGHT); // 1 metre tall
         setWidth(WIDTH); // 1 metre wide
-        setType(type);
+        setType('1');
         // Choose a Bitmap
-        setBitmapName("turf");
+        setBitmapName("grass");
         // Where does the tile start
         // X and y locations from constructor parameters
         setWorldLocation(worldStartX, worldStartY, 0);
